@@ -1,8 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { RencontresComponent } from './rencontres/rencontres.component';
+
 
 @NgModule({
   declarations: [
@@ -10,7 +12,8 @@ import { RencontresComponent } from './rencontres/rencontres.component';
     RencontresComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
